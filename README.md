@@ -2,12 +2,11 @@
 
 Attributes for validation during model binding in ASP.NET Core MVC.
 
-|----------------------------|------------------|------------------|
 | Attribute                  | Description      | Example          |
 |----------------------------|------------------|------------------|
 | `[Whitelist(<whitelist>)]` | Whitelists a field to ensure only a specific set of characters are allowed in that field | `[Whitelist("abc123")]` allows only the characters 'a', 'b', 'c', '1', '2', and '3' in the field. |
 | `[FileExtensions()]`       | Validates that the file extension of any uploaded files is among a specified set of allowed extensions. | `[FileExtensions("jpg,jpeg,png")]` allows only files with the extensions .jpg, .jpeg, and .png. |
-|----------------------------|------------------|------------------|
+
 
 ## Installation
 
@@ -33,7 +32,6 @@ In this example, the `Username` property will only accept characters 'a', 'b', '
 
 Gibe.Validation also provides predefined whitelist sets for common character groups. You can use these sets instead of specifying individual characters. For example:
 
-|-------------------|------------------|
 | Predefined Set    | Description      |
 |-------------------|------------------|
 | SingleText        | Accepts most Latin characters, numbers, and common punctuation. Does not allow line breaks . |
@@ -44,7 +42,6 @@ Gibe.Validation also provides predefined whitelist sets for common character gro
 | Decimal           | Accepts only decimal digits and decimal points. |		
 | PhoneNumber       | Accepts only numbers, plus, brackets, spaces and dashes. |
 | Email             | Accepts only characters allowed in email addresses |
-|-------------------|------------------|
 
 ## Contributing	
 
