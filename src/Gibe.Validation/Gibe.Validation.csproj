@@ -6,7 +6,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
+	<PropertyGroup>
+		<PackageId>Gibe.Validation</PackageId>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<PackageTags>validation dotnet</PackageTags>
+		<Authors>Gibe Digital Ltd</Authors>
+		<Version>1.0.0</Version>
+		<Description>Extra attributes for specific validation during model bindings</Description>
+	</PropertyGroup>
+
+
+	<ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.9" />
   </ItemGroup>
 
