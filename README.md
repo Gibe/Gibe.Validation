@@ -43,6 +43,13 @@ Gibe.Validation also provides predefined whitelist sets for common character gro
 | PhoneNumber       | Accepts only numbers, plus, brackets, spaces and dashes. |
 | Email             | Accepts only characters allowed in email addresses |
 
+You can use these like so:
+
+```
+[Whitelist(Whitelists.Email)]
+public string Email { get; set; }
+```
+
 ## Contributing	
 
 Contributions to Gibe.Validation are welcome! If you have an idea for a new validation attribute or an improvement to an existing one, please submit a pull request.
